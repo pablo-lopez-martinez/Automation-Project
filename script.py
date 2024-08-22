@@ -15,7 +15,7 @@ unique_column = 'nro solicitud'
 groups = df.groupby(unique_column)
 #Por cada grupo se realiza una factura 
 for group_name, group in groups:
-    path_dest = os.path.join("C:/Users/Pablo/OneDrive/Escritorio/Claudia/facturas", f"factura{count}.pdf")
+    path_dest = os.path.join("facturas", f"factura{count}.pdf")
     create_pdf(group, path_dest)
     count+=1
 
